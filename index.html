@@ -13,6 +13,7 @@
       <button class="menu-button" id="menuButton" aria-label="Open navigation">&#9776;</button>
       <div class="nav-links" id="navLinks">
         <a href="index.html" class="active">Introduction</a>
+        <a href="#ai-survey">AI Survey</a>
         <a href="activities.html">Activities</a>
       </div>
     </nav>
@@ -72,6 +73,39 @@
           <h3>Problem Solving</h3>
           <p>Learning how to break complex problems into simple steps.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="ai-survey">
+      <p class="eyebrow">AI Survey Service</p>
+      <h2>AI 설문서비스</h2>
+      <div class="contact-card">
+        <div class="contact-intro">
+          <h3>AI 에이전트에게 질문하기</h3>
+          <p>
+            이름, 이메일, 질문 내용을 입력하면 AI 에이전트가 내용을 분석하고
+            답변을 이메일로 받을 수 있도록 접수합니다.
+          </p>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <label for="visitorName">이름</label>
+          <input type="text" id="visitorName" placeholder="이름" required />
+
+          <label for="visitorEmail">이메일</label>
+          <input type="email" id="visitorEmail" placeholder="이메일" required />
+
+          <label for="visitorMessage">질문</label>
+          <textarea
+            id="visitorMessage"
+            placeholder="AI 에이전트에게 할 질문을 입력하세요"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn primary">AI 에이전트에게 질문하기</button>
+        </form>
+
+        <div id="responseMessage" class="response-message" aria-live="polite"></div>
       </div>
     </section>
   </main>

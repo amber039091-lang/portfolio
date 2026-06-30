@@ -138,7 +138,8 @@ h1 {
 
 .profile-card,
 .card,
-.activity-card {
+.activity-card,
+.contact-card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -249,6 +250,71 @@ h1 {
   cursor: pointer;
 }
 
+.contact-card {
+  padding: 28px;
+}
+
+.contact-intro {
+  margin-bottom: 24px;
+}
+
+.contact-intro h3 {
+  font-size: 24px;
+  margin: 0 0 8px;
+}
+
+.contact-intro p {
+  color: var(--muted);
+  margin: 0;
+  max-width: 720px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 10px;
+}
+
+.contact-form label {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font: inherit;
+  padding: 13px 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.contact-form button {
+  border: none;
+  cursor: pointer;
+  margin-top: 8px;
+  width: fit-content;
+}
+
+.response-message {
+  display: none;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
 footer {
   margin-top: 48px;
   padding: 24px;
@@ -296,5 +362,9 @@ footer {
   .activity-card {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .contact-form button {
+    width: 100%;
   }
 }
