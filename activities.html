@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | Activities</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">MyPortfolio</a>
+      <button class="menu-button" id="menuButton" aria-label="Open navigation">&#9776;</button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Introduction</a>
+        <a href="activities.html" class="active">Activities</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <p class="eyebrow">My Work</p>
+      <h1>Activity List</h1>
+      <p>Here are some activities, projects, and experiences I have worked on.</p>
+    </section>
+
+    <section class="section">
+      <div class="activity-list">
+        <article class="activity-card">
+          <div>
+            <span class="activity-date">2026</span>
+            <h2>Personal Portfolio Website</h2>
+            <p>
+              Created a responsive website using HTML, CSS, and JavaScript to
+              introduce myself and organize my activities.
+            </p>
+          </div>
+          <button class="icon-button" onclick="showMessage('Portfolio Website')">View</button>
+        </article>
+
+        <article class="activity-card">
+          <div>
+            <span class="activity-date">2025</span>
+            <h2>School Project</h2>
+            <p>
+              Worked with classmates to research, design, and present a project
+              based on a real-world topic.
+            </p>
+          </div>
+          <button class="icon-button" onclick="showMessage('School Project')">View</button>
+        </article>
+
+        <article class="activity-card">
+          <div>
+            <span class="activity-date">2025</span>
+            <h2>Coding Practice</h2>
+            <p>
+              Practiced JavaScript basics including variables, functions, DOM
+              control, and event handling.
+            </p>
+          </div>
+          <button class="icon-button" onclick="showMessage('Coding Practice')">View</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
